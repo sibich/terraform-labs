@@ -4,30 +4,30 @@ tags                    = {
                     env = "staging"
 }
 
-ResourceGroup           = "resourcegroup02"
+ResourceGroup           = "resourcegrouptf"
 
-vm                      = "tfvm02"
-vmsize                  = "Standard_B2ms"
+vm                      = "tfvm03"
+vmsize                  = "Standard_B2s"
 vmpublisher             = "MicrosoftWindowsServer"
 offer                   = "WindowsServer"
-sku                     = "2016-Datacenter"
+sku                     = "2019-Datacenter"
 ostype                  = "windows"
 
 hostname                = "terravm"
 LocalAdmin              = "vitaly"
 LocalSrvAccSecret       = "P@ssword"
 
-vnetname                = "Vnet02"
+vnetname                = "Vnet03"
 VNetAddressPrefix       = "172.16.0.0/16"
 subnetname              = "Subnet"
 VNetSubnetAddressPrefix = "172.16.1.0/24"
-InterfaceName           = "net02"
+InterfaceName           = "net03"
 publicIpName            = "terra-pip"
 fqdn                    = "sibich"
 
 NetworkSecurityGroup    = "tfnrg"
 
-StorageAccount          = "sibichstorage02"
+StorageAccount          = "sibichstorage03"
 StorageContainer        = "vhds"
 StorageAccountTier      = "Standard"
 StorageAccountRepType   = "LRS"

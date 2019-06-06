@@ -123,10 +123,6 @@ resource "azurerm_storage_account" "terravm" {
   tags                     = "${azurerm_resource_group.terravm.tags}"
   account_tier             = "${var.StorageAccountTier}"
   account_replication_type = "${var.StorageAccountRepType}"
-
-  lifecycle = {
-    prevent_destroy = true
-  }
 }
 
 resource "azurerm_storage_container" "terravm" {
@@ -134,10 +130,6 @@ resource "azurerm_storage_container" "terravm" {
   resource_group_name      = "${azurerm_resource_group.terravm.name}"
   storage_account_name     = "${azurerm_storage_account.terravm.name}"
   container_access_type    = "private"
-
-  lifecycle = {
-    prevent_destroy = true
-  }
 }
 
 resource "azurerm_virtual_machine" "terravm" {
