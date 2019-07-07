@@ -1,0 +1,1 @@
+﻿new-item c:\Test -ItemType directory -Force
