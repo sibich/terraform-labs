@@ -4,6 +4,6 @@ Invoke-WebRequest -Uri http://az764295.vo.msecnd.net/stable/c7d83e57cd18f18026a8
 Invoke-WebRequest -Uri https://github.com/git-for-windows/git/releases/download/v2.22.0.windows.1/Git-2.22.0-64-bit.exe -OutFile D:\soft\git.exe -UseBasicParsing
 #Install-Module -Name Az -Force
 & D:\soft\note.exe /S
-& D:\soft\git.exe /S
+& D:\soft\git.exe /VERYSILENT
 & D:\soft\vscode.exe /VERYSILENT /NORESTART /MERGETASKS=!runcode
 Restart-Computer
