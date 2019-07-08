@@ -6,4 +6,3 @@ Invoke-WebRequest -Uri https://github.com/git-for-windows/git/releases/download/
 & D:\soft\note.exe /S
 & D:\soft\git.exe /VERYSILENT
 & D:\soft\vscode.exe /VERYSILENT /NORESTART /MERGETASKS=!runcode
-Restart-Computer
